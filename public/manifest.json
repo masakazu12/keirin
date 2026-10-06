@@ -1,0 +1,17 @@
+{
+  "name": "AI競輪予想 v2 (Windows Edition)",
+  "short_name": "AI競輪予想",
+  "description": "Plackett-Luceモデルによる出走表・ライン・オッズ分析と期待値(EV)厳密計算 Windows対応アプリ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#181818",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

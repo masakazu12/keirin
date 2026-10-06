@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI競輪予想 v2 (Windows Edition)</title>
+    <meta name="description" content="Plackett-Luceモデルによる出走表・ライン・オッズ分析と期待値(EV)厳密計算を行うWindows対応競輪AI予想アプリケーション" />
+    <meta property="og:title" content="AI競輪予想 v2 (Windows Edition)" />
+    <meta property="og:description" content="Plackett-Luceモデルによる出走表・ライン・オッズ分析と期待値(EV)厳密計算を行うWindows対応競輪AI予想アプリケーション" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <script>
+      // Filter out third-party browser extension errors (e.g. MetaMask background connection in iframe)
+      window.addEventListener('unhandledrejection', function(e) {
+        var reason = (e && e.reason && (e.reason.message || e.reason.stack || String(e.reason))) || '';
+        if (/metamask|ethereum|web3|wallet/i.test(reason)) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        }
+      });
+      window.addEventListener('error', function(e) {
+        var msg = (e && (e.message || '')) || '';
+        if (/metamask|ethereum|web3|wallet/i.test(msg)) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

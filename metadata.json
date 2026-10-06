@@ -1,0 +1,7 @@
+{
+  "name": "AI競輪予想 v2 (Windows Edition)",
+  "description": "Plackett-Luceモデルによる出走表・ライン・オッズ分析と期待値(EV)厳密計算を行うWindows対応競輪AI予想アプリケーション",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
